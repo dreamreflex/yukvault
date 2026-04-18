@@ -1,0 +1,12 @@
+# Normalize text files
+* text=auto eol=lf
+*.go text eol=lf
+*.sh text eol=lf
+*.md text eol=lf
+Makefile text eol=lf
+
+# Git LFS is reserved for large, non-secret assets only.
+# Do not put real vaults, credential sidecars, recovery material,
+# or plaintext images into Git or Git LFS.
+fixtures-lfs/** filter=lfs diff=lfs merge=lfs -text
+dist/releases/** filter=lfs diff=lfs merge=lfs -text

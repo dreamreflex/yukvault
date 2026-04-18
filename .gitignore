@@ -1,0 +1,41 @@
+# Secrets and encrypted containers
+*.vault
+*.vault.credid
+*.credid
+*.mnemonic
+*.recovery
+
+# Temporary images and mounts
+*.img
+test-mount/
+fixtures/
+fixtures-private/
+
+# Local binaries and release outputs
+yukvault
+yukvault.exe
+dist/
+bin/
+
+# Coverage, logs, and reports
+coverage.out
+coverage.html
+*.coverprofile
+*.log
+*.tmp
+
+# Editor and OS files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Environment and local config
+.env
+.env.*
+
+# Go workspaces
+go.work
+go.work.sum
